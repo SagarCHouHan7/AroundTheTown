@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Event | Around The Town</title>
+    <link rel="stylesheet" href="create-event.css">
+</head>
+<body>
+
+    <header>
+        <div class="header">
+            <div class="icon">
+                <img src="./Assets/AroundTheTownLogo1.jpg" alt="">
+                <p>Around The Town</p>
+            </div>
+            <div class="pages">
+                <a href="./index.html">Home</a>
+                <a href="./CreateEvent.html">CreateEvent</a>
+                <a href="./FindEvent.html">FindEvents</a>
+                <a href="./About.html">About</a>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+
+        <h1>Create Your Event</h1>
+
+        <form id="eventForm">
+            <label>Event Title:
+                <input type="text" name="title" required>
+            </label>
+
+            <label>Type of Event:
+                <input type="text" name="type" required>
+            </label>
+
+            <label>City:
+                <input type="text" name="city" required>
+            </label>
+
+            <label>Venue:
+                <input type="text" name="venue" required>
+            </label>
+
+            <label>Date & Time:
+                <input type="datetime-local" name="dateTime" required>
+             
+            </label>
+
+
+            <label>Food Available:
+                <select name="foodAvailable">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </label>
+
+            <label>Participation Cost:
+                <input type="number" name="cost" placeholder="0 for Free" min="0">
+            </label>
+
+            <label>Description:
+                <textarea name="description" rows="4"></textarea>
+            </label>
+
+            <label>Contact Number:
+                <input type="tel" name="contact" required>
+            </label>
+
+            <button type="submit">Submit Event</button>
+        </form>
+
+        <div id="confirmation" class="hidden">Your event has been submitted!</div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Around The Town. All rights reserved.</p>
+
+            <div class="footer-item">
+                <ul>Contact US
+                    <li>7223959729</li>
+                    <li>sagarsinghchouhan1705@gmail.com</li>
+                </ul>
+
+                <ul>Explore More
+                    <li>www.google.com</li>
+                    <li>Help</li>
+                    <li>How to create Event</li>
+                </ul>
+
+                <ul>Made BY
+                    <li>Sagar Chouhan</li>
+                    <li>For Minor Project </li>
+                    <li>JIT Borawan</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="create-event.js"></script>
+</body>
+</html>

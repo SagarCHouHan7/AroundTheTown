@@ -1,0 +1,48 @@
+.header{
+    position: fixed;
+    background-color: cadetblue;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.icon img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+   padding: 0px;
+
+}
+.icon p{
+    font-size: 40px;
+}
+
+.pages{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.pages a{
+    text-decoration: none;
+    color: brown;
+    font-size: 24px;
+    font-family: 'poppins';
+
+}
