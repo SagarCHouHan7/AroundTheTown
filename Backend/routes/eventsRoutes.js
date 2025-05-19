@@ -108,5 +108,34 @@ VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`;
   }
 });
 
+// GET event by ID
+router.get("/:id", async (req, res) => {
+  const { id } = req.params;
+  try {
+    const [rows] = await db.query("SELECT * FROM events WHERE id = ?", [id]);
+
+    if (rows.length === 0) {
+      return res.status(404).send({
+        success: false,
+        message: "Event not found",
+      });
+    }
+
+    res.status(200).send({
+      success: true,
+      message: "Fetched event",
+      data: rows[0],
+    });
+  } catch (error) {
+    console.error(error);
+    res.status(500).send({
+      success: false,
+      message: "Error fetching event",
+      error,
+    });
+  }
+});
+
+
 module.exports = router;
 

@@ -176,3 +176,8 @@ h1 {
     font-size: 15px;
     color: #7894b0;
 }
+
+a{
+    text-decoration: none;
+    color: black;
+}

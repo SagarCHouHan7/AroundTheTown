@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // `;
 
             card.innerHTML = `
-                <a  href = "./EventDetails.html">
+                <a  href = "./EventDetails.html?id=${event.id}">
                  <img src="${imageUrl}" alt="${event.title}" />
                    <div class="details">
                     <h3>${event.title}</h3>
